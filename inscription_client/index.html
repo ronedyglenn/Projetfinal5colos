@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+    <form>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+      
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+      
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required><br><br>
+      
+        <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" name="adresse" required><br><br>
+      
+        <label for="competences">Compétences :</label>
+        <textarea id="competences" name="competences" required></textarea><br><br>
+      
+        <label for="cv">CV :</label>
+        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required><br><br>
+      
+        <label for="portfolio">Portfolio :</label>
+        <input type="url" id="portfolio" name="portfolio"><br><br>
+      
+        <label for="moyen_paiement">Moyen de paiement :</label>
+        <select id="moyen_paiement" name="moyen_paiement" required>
+          <option value="paypal">Airtel money</option>
+          <option value="virement">Moov monney</option>
+          <option value="cheque">Visa</option>
+        </select><br><br>
+      
+        <label for="documents">Documents supplémentaires :</label>
+        <input type="file" id="documents" name="documents" multiple><br>
+      
+        <input type="submit" value="Envoyer">
+      </form>
+    </body>
+</html>

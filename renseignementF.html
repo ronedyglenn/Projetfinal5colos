@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulaire de renseignement Entreprise / Particulier</title>
+  <style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    .container{
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .form-group label{
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .form-group input, .form-group select, .form-group textarea{
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    btn{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: #0056b3;
+    }
+    label{
+      color: #b57f2e;
+    }
+
+    .vert{
+        border: 1px solid;
+    }
+    
+    input{
+      background-color: #F4F4F4;
+    }
+    ::placeholder, h2, p{
+      font-family: 'Times New Roman', Times, serif;
+    }
+    </style>
+  </head>
+
+<body>
+  <div class="container">
+    <h2 style="padding-bottom: 8%; color:#b57f2e ;">Formulaire de renseignement</h2>
+    <p> <strong>Bonjour à vous merci de le remplir, ce questionnaire nous permet d'enregistrer vos informations afin de créer, et de maintenir à jour la fiche renseignement.</strong> </p>
+    <form action="traitement_demande_entreprise.php" method="post">
+      <div class="form-group">
+        <label for="nom_entreprise"> Nom et prénom:</label>
+        <input type="text" id="nom_prénom" name="nom_prénom" placeholder="nom_prénom"  class="vert" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nom_entreprise">Date de naissance</label>
+        <input type="text" id="date_naissance" placeholder="date_naissance"name="Date de naissance"  required>
+      </div>
+      
+      <div class="form-group">
+        <label for="adresse"> Adresse:</label>
+        <input type="text" id="adresse" name="adresse" placeholder="adresse"  required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" placeholder="e_mail" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telephone">Téléphone:</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="téléphone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="date_limite">Profession:</label>
+        <input type="text" id="Profession" name="Profession" placeholder="Profession" >
+      </div>
+
+     
+
+      <div class="form-group">
+        <label for="domaine">Domaine d'Intérêt:</label>
+        <select id="domaine" name="domaine" required>
+          <option value="Audiovisuel">Audiovisuel</option>
+          <option value="Développement">Développement</option>
+          <option value="Médias Sociaux">Médias Sociaux</option>
+          <option value="Infographie">Infographie</option>
+        </select>
+      </div>
+      
+      
+      <div class="form-group">
+        <label for="message">Description du service/sous-service:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="cv">Joindre Portfolio:</label>
+        <input type="file" id="doc" name="doc" accept=".pdf" required>
+      </div>
+      
+      
+      <div class="form-group">
+        <button type="submit" class="btn"><a href="candidate-dashboard.html">Envoyer</a></button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
